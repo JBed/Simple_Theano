@@ -1,0 +1,17 @@
+__pycache__/
+*.py[cod]
+.ipynb_checkpoints/
+
+.DS_Store
+.AppleDouble
+.LSOverride
+
+.Spotlight-V100
+.Trashes
+
+data/
+banjo/
+.idea
+auto_curate.egg-info
+dist/
+build/
