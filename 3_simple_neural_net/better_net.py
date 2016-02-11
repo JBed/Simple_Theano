@@ -58,7 +58,7 @@ predict = theano.function([x], y)
 batch_size = 50
 
 for i in range(50):
-    print "iteration {}".foramt(i + 1)
+    print "iteration {}".format(i + 1)
     for start in range(0, len(x_train), batch_size):
         x_batch = x_train[start:start + batch_size]
         t_batch = t_train[start:start + batch_size]
