@@ -1,8 +1,6 @@
 import theano
 import theano.tensor as T
 import numpy as np
-import matplotlib.pyplot as plt
-plt.ion()
 import sys
 sys.path.insert(0, '../data_loader/')
 import load
@@ -57,5 +55,3 @@ for i in range(50):
     predictions_test = predict(x_test)
     accuracy = np.mean(predictions_test == labels_test)
     print "accuracy: {}\n".format(accuracy)
-
-
