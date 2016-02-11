@@ -1,24 +1,17 @@
 import theano
 import theano.tensor as T
 import numpy as np
-import matplotlib.pyplot as plt
-plt.ion()
 import sys
 sys.path.insert(0, '../data_loader/')
 import load
-
 
 # load data
 x_train, t_train, x_test, t_test = load.cifar10(dtype=theano.config.floatX)
 labels_test = np.argmax(t_test, axis=1)
 
-# visualize data
-plt.imshow(x_train[0].reshape(32, 32), cmap=plt.cm.gray)
-
 # define symbolic Theano variables
 x = T.matrix()
 t = T.matrix()
-
 
 # define model: logistic regression
 def floatX(x):
