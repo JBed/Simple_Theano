@@ -1,15 +1,11 @@
 import theano
 import theano.tensor as T
 import numpy as np
-import matplotlib.pyplot as plt
-plt.ion()
 
 # create artificial training data
 x_train = np.linspace(-1, 1, 101)
 t_train = 2 * x_train + np.random.randn(*x_train.shape) * 0.33
 
-# plot data
-plt.scatter(x_train, t_train)
 
 # define symbolic Theano variables
 x = T.scalar()
