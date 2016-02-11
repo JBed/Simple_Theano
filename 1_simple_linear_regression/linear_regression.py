@@ -25,7 +25,7 @@ updates = [(w, w - g * 0.01)]
 
 
 # compile theano function
-train = theano.function([x, t], cost, updates=updates)
+train = theano.function([x, t], cost, updates=updates,allow_input_downcast=True)
 
 
 # train model
