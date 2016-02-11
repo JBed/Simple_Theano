@@ -35,7 +35,3 @@ for ii in range(20):
         train(x, t)
     print "w = {}".format(w.get_value()) + '\n'
 
-
-# plot fitted line
-plt.plot(x_train, w.get_value() * x_train)
-
