@@ -1,8 +1,6 @@
 import theano
 import theano.tensor as T
 import numpy as np
-import matplotlib.pyplot as plt
-plt.ion()
 import sys
 sys.path.insert(0, '../data_loader/')
 import load
